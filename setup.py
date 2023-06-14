@@ -16,7 +16,7 @@ setup(
     project_urls={
         "Homepage": "https://github.com/Skelmis/python-docx-stubs",
     },
-    package_data={"docx": ["py.typed", "*.pyi", "**/*.pyi"]},
+    package_data={"docx-stubs": ["py.typed", "*.pyi", "**/*.pyi"]},
     install_requires=[],
     classifiers=[
         "Programming Language :: Python :: 3.10",
