@@ -8,3 +8,5 @@ Install these with:
 ```shell
 pip install git+https://github.com/Skelmis/python-docx-stubs.git
 ```
+
+Then navigate to the directory in the Pycharm hierarchy and mark it as a "Source Root". Enjoy
