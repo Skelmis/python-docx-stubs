@@ -5,13 +5,6 @@ with open("readme.md", "r") as fh:
 
 version = "0.8.11"
 
-
-def parse_requirements_file(path):
-    with open(path) as fp:
-        dependencies = (d.strip() for d in fp.read().split("\n") if d.strip())
-        return [d for d in dependencies if not d.startswith("#")]
-
-
 setup(
     name="python-docx-stubs",
     version=version,
@@ -23,7 +16,7 @@ setup(
     project_urls={
         "Homepage": "https://github.com/Skelmis/python-docx-stubs",
     },
-    packages=find_packages(include=("docx", "docx.*")),
+    package_data={"docx": ["py.typed", "*.pyi", "**/*.pyi"]},
     install_requires=[],
     classifiers=[
         "Programming Language :: Python :: 3.10",
