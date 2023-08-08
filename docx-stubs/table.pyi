@@ -10,7 +10,7 @@ from docx.enum.table import WD_TABLE_DIRECTION
 from docx.styles.style import _TableStyle
 
 from .blkcntnr import BlockItemContainer
-from .shared import Parented, lazyproperty
+from .shared import Parented, property
 
 """
 The |Table| object and related proxy classes.
@@ -76,7 +76,7 @@ class Table(Parented):
         """
         ...
     
-    @lazyproperty
+    @property
     def columns(self) -> _Columns:
         """
         |_Columns| instance representing the sequence of columns in this
@@ -90,7 +90,7 @@ class Table(Parented):
         """
         ...
     
-    @lazyproperty
+    @property
     def rows(self) -> _Rows:
         """
         |_Rows| instance containing the sequence of rows in this table.
